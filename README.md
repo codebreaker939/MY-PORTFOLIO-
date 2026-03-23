@@ -135,5 +135,5 @@ Contributions are welcome!
 
 **Aniket Rai**
 
-* 💼 Portfolio: https://aniket-rai-dev-portfolio.netlify.app/
+* 💼 Portfolio: https://anifolio.netlify.app/
 
