@@ -1,0 +1,153 @@
+.timeline {
+  position: relative;
+  margin-top: 20px;
+}
+
+.timeline__line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--accent-primary), var(--accent-secondary), var(--accent-tertiary));
+  opacity: 0.3;
+}
+
+.timeline__item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  width: 50%;
+}
+
+.timeline__item--left {
+  justify-content: flex-end;
+  padding-right: 60px;
+  margin-left: 0;
+}
+
+.timeline__item--right {
+  justify-content: flex-start;
+  padding-left: 60px;
+  margin-left: 50%;
+}
+
+.timeline__dot {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  z-index: 2;
+}
+
+.timeline__item--left .timeline__dot {
+  right: -24px;
+}
+
+.timeline__item--right .timeline__dot {
+  left: -24px;
+}
+
+.timeline__card {
+  max-width: 450px;
+  padding: 28px;
+  width: 100%;
+}
+
+.timeline__card-header {
+  margin-bottom: 16px;
+}
+
+.timeline__period {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.timeline__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 6px;
+}
+
+.timeline__company {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.timeline__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.timeline__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.timeline__bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .timeline__line {
+    left: 20px;
+  }
+
+  .timeline__item {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 56px !important;
+    padding-right: 0 !important;
+    justify-content: flex-start !important;
+    margin-bottom: 36px;
+  }
+
+  .timeline__dot {
+    left: 0 !important;
+    right: auto !important;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .timeline__card {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .timeline__title {
+    font-size: 1.1rem;
+  }
+
+  .timeline__period {
+    font-size: 0.72rem;
+  }
+
+  .timeline__company {
+    font-size: 0.82rem;
+  }
+
+  .timeline__list li {
+    font-size: 0.82rem;
+  }
+}
+
