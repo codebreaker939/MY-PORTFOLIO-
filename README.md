@@ -1,16 +1,139 @@
-# React + Vite
+# 🚀 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive **3D portfolio website** built using **React + Vite**, showcasing projects, skills, and contact functionality with smooth animations and immersive visuals.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* ⚡ Fast performance with **Vite**
+* 🎨 Beautiful UI with smooth animations using **Framer Motion**
+* 🌐 Interactive 3D elements powered by **Three.js** and **React Three Fiber**
+* 📜 Timeline section for experience/projects
+* 📩 Contact form integration using **EmailJS**
+* 📱 Fully responsive design (mobile + desktop)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React
+* **Build Tool:** Vite
+* **3D Graphics:** Three.js, @react-three/fiber, @react-three/drei
+* **Animations:** Framer Motion
+* **Icons:** React Icons
+* **Email Service:** EmailJS
+* **Styling:** CSS / Custom styling
+
+---
+
+## 📁 Project Structure
+
+```
+porrtfolio/
+│── public/           # Static assets
+│── src/              # Main source code
+│   ├── components/   # Reusable UI components
+│   ├── assets/       # Images / models
+│   ├── pages/        # Sections (Home, About, Projects, Contact)
+│   └── App.jsx       # Root component
+│── index.html
+│── package.json
+│── vite.config.js
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+
+```bash
+git clone <your-repo-link>
+cd porrtfolio
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start development server:
+
+```bash
+npm run dev
+```
+
+4. Open in browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## 🔑 Environment Variables
+
+For EmailJS integration, create a `.env` file:
+
+```
+VITE_EMAILJS_PUBLIC_KEY=your_key
+VITE_EMAILJS_SERVICE_ID=your_service
+VITE_EMAILJS_TEMPLATE_ID=your_template
+```
+
+---
+
+## 🎯 Use Case
+
+This project is ideal for:
+
+* Personal portfolio showcase
+* Developer branding
+* Freelance/client presentation
+* Resume alternative (interactive)
+
+--- 
+
+## 🌍 Deployment
+
+You can deploy this project on:
+
+* Vercel
+* Netlify
+* GitHub Pages
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repo
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
+
+
+
+## 👨‍💻 Author
+
+**Aniket Rai**
+
+* 💼 Portfolio: https://aniket-rai-dev-portfolio.netlify.app/
+
